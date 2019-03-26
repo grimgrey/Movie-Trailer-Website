@@ -1,0 +1,27 @@
+<!-- Template for movie details card -->
+<div class="ui link raised card">
+  <div class="blurring dimmable image">
+    <div class="ui dimmer">
+       <div class="content">
+         <div class="center">
+          <h2 class="ui inverted header">{movie_mpaa_rating}</h2>
+          <div class="ui inverted button trailer-button" data-youtube-id="{trailer_youtube_id}">Play Trailer</div>
+         </div>
+       </div>
+    </div>
+    <img src="{poster_image_url}">
+  </div>
+  <div class="content">
+    <h3 class="ui header">
+      {movie_title}
+      <div class="sub header">{release_date}</div>
+    </h3>
+    <div class="meta">
+      <span class="date">{movie_plot}</span>
+    </div>
+  </div>
+  <div class="extra content">
+    <div class="ui left floated tiny header">Genre:</div>
+    &nbsp;{movie_genre}
+  </div>
+</div>
